@@ -1,0 +1,26 @@
+.LandingPage {
+  background-image: url("../assets/LandingPageBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2 {
+  background-color: rgba(134, 243, 207, 0.48);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+p {
+  background-color: rgba(149, 243, 212, 0.46);
+  border-radius: 10px;
+  padding: 10px;
+}

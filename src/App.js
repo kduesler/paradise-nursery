@@ -1,50 +1,26 @@
 // src/App.js
-
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useNavigate,
-} from "react-router-dom";
-
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-//styling
-
-import "./App.css";
-
-// import components
-
-import LandingPage from "./LandingPage";
-import CartPage  from "./CartPage";
-
-function Home() {
-  const navigate = useNavigate();
-  return (
-    <div className="app-container">
-      <div className="content">
-        <div className="landingWelcome">
-          <h1>Welcome to the nursery</h1>
-          <p>You'll find pretty flowers here at this wonderful store</p>
-          <button className="start" onClick={() => navigate("/landing")}>
-            Start!
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
+// import Pages
+import LandingPage from "./Pages/LandingPage";
+import CartPage from "./Pages/CartPage";
+import Products from "./Pages/Products";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
 
-        <Route path="/landing" element={<LandingPage />} />
-        <Route path="/cart" element={<CartPage />} />
-      </Routes>
-    </Router>
+          <Route path="/cart" element={<CartPage />} />
+
+          <Route path="/products" element={<Products />} />
+        </Routes>
+      </Router>
+
+    </>
   );
 }
 

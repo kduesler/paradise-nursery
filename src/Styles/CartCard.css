@@ -1,0 +1,18 @@
+.cart-card {
+    border: 8px, green;
+    border-radius: 20px;
+    background-color: rgb(167, 167, 240);
+    border-style: double;
+    padding: 3px;
+    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    float: left;
+    clear: left;
+}
+
+h3 {
+    background-color: rgb(120, 111, 220);
+}

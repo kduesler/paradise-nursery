@@ -1,0 +1,35 @@
+.navBarStyle {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.homeProductsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    align-items: center;
+    
+}
+
+.cartContainer {
+    margin-left: auto;
+}
+
+.cartButton {
+    background: url('/src/assets/shopping-cart.png') no-repeat center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.cartAmount {
+
+display: inline-block;
+margin-left: 8px;
+vertical-align: middle;
+}
