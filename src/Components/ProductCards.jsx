@@ -1,9 +1,7 @@
-import React, { useState, useEffect, useContext, createContext } from "react";
-
-import "../Styles/ProductCards.css";
-import CartCard from "./CartCards"
+import React, { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 
+import "../Styles/ProductCards.css";
 
 const plantProducts = [
   {
@@ -12,8 +10,7 @@ const plantProducts = [
     description:
       "A graceful indoor plant with white flowers and lush green leaves, purifies the air.",
     price: 12.99,
-    image:
-      "https://images.pexels.com/photos/11736421/pexels-photo-11736421.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    quantity: 0,
   },
   {
     id: 2,
@@ -21,12 +18,14 @@ const plantProducts = [
     description:
       "A hardy plant with tall, striped leaves. Perfect for low-light spaces.",
     price: 15.49,
+    quantity: 0,
   },
   {
     id: 3,
     name: "Fiddle Leaf Fig",
     description: "Large, glossy leaves that add a tropical vibe to any room.",
     price: 25.99,
+    quantity: 0,
   },
   {
     id: 4,
@@ -34,6 +33,7 @@ const plantProducts = [
     description:
       "A collection of small, colorful succulents for easy maintenance.",
     price: 9.99,
+    quantity: 0,
   },
   {
     id: 5,
@@ -41,18 +41,21 @@ const plantProducts = [
     description:
       "A fragrant herb ideal for culinary dishes and easy to grow indoors.",
     price: 6.99,
+    quantity: 0,
   },
   {
     id: 6,
     name: "Aloe Vera",
     description: "A medicinal plant with thick leaves full of soothing gel.",
     price: 10.99,
+    quantity: 0,
   },
   {
     id: 7,
     name: "Monstera",
     description: "Iconic split leaves that bring elegance to any space.",
     price: 29.99,
+    quantity: 0,
   },
   {
     id: 8,
@@ -60,6 +63,7 @@ const plantProducts = [
     description:
       "A set of three small, spiky cactus plants for a desert theme.",
     price: 14.99,
+    quantity: 0,
   },
   {
     id: 9,
@@ -67,6 +71,7 @@ const plantProducts = [
     description:
       "A flowering herb that adds a calming scent and delicate purple blooms.",
     price: 8.99,
+    quantity: 0,
   },
   {
     id: 10,
@@ -74,12 +79,11 @@ const plantProducts = [
     description:
       "A vining plant with heart-shaped, variegated leaves. Great for hanging planters.",
     price: 11.49,
+    quantity: 0,
   },
 ];
 
-
 function ProductCard() {
- 
   const { addToCart } = useContext(CartContext);
 
   return (

@@ -5,12 +5,14 @@ export const CartContext = createContext();
 
 // Create a provider component
 export const CartProvider = ({ children }) => {
+
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
     console.log("Adding product to cart:", product);
     setCart((prevCart) => {
       const updatedCart = [...prevCart, product];
+      
       console.log("Updated cart:", updatedCart);
       return updatedCart;
     });
@@ -28,3 +30,4 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
+

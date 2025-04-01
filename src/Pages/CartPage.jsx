@@ -13,6 +13,9 @@ function CartPage() {
       <div className="cartPage">
        {<CartCard />}
       </div>
+      <div>
+        <button className="purchase" onClick={() => alert("Soon to be developed")}>Purchase</button>
+      </div>
     </>
   );
 }
