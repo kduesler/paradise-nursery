@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import "../Styles/NavBar.css";
-import CartCard from "./CartCards";
 import { CartContext } from "../Context/CartContext";
 
 
