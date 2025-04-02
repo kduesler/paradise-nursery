@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/paradise-nursery/static/css/main.58dddf3e.css",
-    "main.js": "/paradise-nursery/static/js/main.2118fb8c.js",
+    "main.css": "/paradise-nursery/static/css/main.130f71ce.css",
+    "main.js": "/paradise-nursery/static/js/main.3896f5e1.js",
     "static/js/453.81c3b423.chunk.js": "/paradise-nursery/static/js/453.81c3b423.chunk.js",
     "static/media/LandingPageBackground.jpg": "/paradise-nursery/static/media/LandingPageBackground.a915a6e1db38df185fd7.jpg",
     "static/media/shopping-cart.png": "/paradise-nursery/static/media/shopping-cart.84f0cabc82e607c299b3.png",
     "index.html": "/paradise-nursery/index.html",
-    "main.58dddf3e.css.map": "/paradise-nursery/static/css/main.58dddf3e.css.map",
-    "main.2118fb8c.js.map": "/paradise-nursery/static/js/main.2118fb8c.js.map",
+    "main.130f71ce.css.map": "/paradise-nursery/static/css/main.130f71ce.css.map",
+    "main.3896f5e1.js.map": "/paradise-nursery/static/js/main.3896f5e1.js.map",
     "453.81c3b423.chunk.js.map": "/paradise-nursery/static/js/453.81c3b423.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58dddf3e.css",
-    "static/js/main.2118fb8c.js"
+    "static/css/main.130f71ce.css",
+    "static/js/main.3896f5e1.js"
   ]
 }
